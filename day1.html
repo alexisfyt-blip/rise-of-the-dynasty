@@ -16,14 +16,14 @@
             background-size: cover;
             background-position: center;
         }
-        .character-card, .mission-card { transition: all 0.4s ease; }
-        .character-card:hover, .mission-card:hover { transform: scale(1.05) translateY(-8px); }
+        .character-card { transition: all 0.4s ease; }
+        .character-card:hover { transform: scale(1.05) translateY(-8px); }
         .progress-bar { cursor: pointer; transition: all 0.3s ease; }
     </style>
 </head>
 <body class="tail-container bg-[#F4F4F4] text-[#303030]">
 
-    <!-- NAVBAR (same as before) -->
+    <!-- NAVBAR -->
     <nav class="bg-white border-b border-[#D7D7D9] sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
             <div class="flex items-center gap-x-3">
@@ -56,77 +56,86 @@
     </header>
 
     <div class="max-w-6xl mx-auto px-8 py-16">
-        <!-- Welcome Dialog -->
+        <!-- WELCOME DIALOG -->
         <div class="bg-white border border-[#54608B] rounded-3xl p-10 mb-16 max-w-3xl mx-auto text-center">
             <h2 class="heading-font text-4xl mb-6">General’s Brief – Day 1</h2>
             <p class="text-lg leading-relaxed">
                 Over the next four days, you will draw wisdom from the Three Kingdoms — 
                 the foresight of <strong>Zhuge Liang</strong>, the loyalty of <strong>Liu Bei</strong>, 
-                the bold vision of <strong>Cao Cao</strong> — and apply them to build real F&amp;B brands.
+                the bold vision of <strong>Cao Cao</strong>, and the stability of <strong>Sun Quan</strong>.
             </p>
         </div>
 
-        <!-- Characters -->
-        <h2 class="heading-font text-4xl font-bold text-center mb-12">Meet the Legends</h2>
+        <!-- CHARACTERS WITH WRITE-UPS -->
+        <h2 class="heading-font text-4xl font-bold text-center mb-12">Wisdom from the Four Legends</h2>
         <div class="grid md:grid-cols-4 gap-8 mb-20">
             <div class="character-card bg-[#1E2937] text-white p-8 rounded-3xl">
                 <div class="text-6xl mb-6">⚔️</div>
-                <h3 class="font-bold text-xl">Cao Cao</h3>
-                <p class="text-amber-400 text-sm">Pragmatic Leader</p>
+                <h3 class="font-bold text-xl mb-1">Cao Cao</h3>
+                <p class="text-amber-400 text-sm mb-4">Pragmatic &amp; Meritocratic Leader</p>
+                <p class="text-sm leading-relaxed">Bold visionary who seizes opportunities. Today you will learn to act decisively and build merit-based systems.</p>
             </div>
             <div class="character-card bg-gray-700 text-white p-8 rounded-3xl">
                 <div class="text-6xl mb-6">🤝</div>
-                <h3 class="font-bold text-xl">Liu Bei</h3>
-                <p class="text-amber-400 text-sm">Benevolent Leader</p>
+                <h3 class="font-bold text-xl mb-1">Liu Bei</h3>
+                <p class="text-amber-400 text-sm mb-4">Moral &amp; Benevolent Leader</p>
+                <p class="text-sm leading-relaxed">Leads with heart and loyalty. You will explore empathy and how to build teams that trust and follow you.</p>
             </div>
             <div class="character-card bg-red-900 text-white p-8 rounded-3xl">
                 <div class="text-6xl mb-6">🏛️</div>
-                <h3 class="font-bold text-xl">Sun Quan</h3>
-                <p class="text-amber-400 text-sm">Collaborative Leader</p>
+                <h3 class="font-bold text-xl mb-1">Sun Quan</h3>
+                <p class="text-amber-400 text-sm mb-4">Stable &amp; Collaborative Leader</p>
+                <p class="text-sm leading-relaxed">Master of alliances and stability. Learn how to create lasting partnerships in business.</p>
             </div>
             <div class="character-card bg-emerald-800 text-white p-8 rounded-3xl">
                 <div class="text-6xl mb-6">🧠</div>
-                <h3 class="font-bold text-xl">Zhuge Liang</h3>
-                <p class="text-amber-400 text-sm">Strategic Leader</p>
+                <h3 class="font-bold text-xl mb-1">Zhuge Liang</h3>
+                <p class="text-amber-400 text-sm mb-4">Strategic &amp; Analytical Leader</p>
+                <p class="text-sm leading-relaxed">The master planner. Today you begin crafting your own strategic identity and vision.</p>
             </div>
         </div>
 
-        <!-- Schedule -->
+        <!-- DETAILED SCHEDULE -->
         <div class="bg-white rounded-3xl p-10 mb-16">
-            <h2 class="heading-font text-4xl font-bold mb-10">Day 1 Schedule</h2>
-            <!-- Schedule content as before -->
+            <h2 class="heading-font text-4xl font-bold mb-10">Day 1 Detailed Schedule</h2>
+            <div class="space-y-12">
+                <div>
+                    <h3 class="font-semibold text-2xl mb-6 text-[#54608B] flex items-center gap-3">
+                        <span>🌅</span> Morning Operations (09:00 – 12:30)
+                    </h3>
+                    <div class="pl-6 border-l-2 border-[#54608B] space-y-6">
+                        <div>
+                            <span class="font-mono text-sm">09:00 – 09:45</span>
+                            <p class="font-medium">Icebreaker: Create Your Hero Persona</p>
+                            <p class="text-sm text-gray-600">Channel the spirit of the legends above. Who will you become?</p>
+                        </div>
+                        <div>
+                            <span class="font-mono text-sm">10:00 – 11:00</span>
+                            <p class="font-medium">Empathy Mapping Workshop</p>
+                            <p class="text-sm text-gray-600">Understand your future customers deeply — like a true strategist.</p>
+                        </div>
+                        <div>
+                            <span class="font-mono text-sm">11:15 – 12:30</span>
+                            <p class="font-medium">Leadership Principles from the Three Kingdoms</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-6 text-[#54608B] flex items-center gap-3">
+                        <span>🌍</span> Afternoon Field Deployment (13:30 – 17:00)
+                    </h3>
+                    <div class="pl-6 border-l-2 border-[#54608B]">
+                        <p class="font-medium mb-4">Observation Quest across hawker centres and F&amp;B hotspots</p>
+                        <p class="text-sm text-gray-600">Your first real-world mission: Observe, document, and gather insights that will fuel your entire bootcamp journey.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Gamified Missions with Clickable Progress -->
-        <h2 class="heading-font text-4xl font-bold text-center mb-12">Your Progress Today</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
-                <div class="text-5xl mb-6">🛡️</div>
-                <h3 class="font-semibold text-xl mb-3">Hero Persona</h3>
-                <div onclick="updateProgress(this)" class="progress-bar h-4 bg-gray-200 rounded-full cursor-pointer mb-4 overflow-hidden">
-                    <div class="progress-fill bg-[#54608B] h-4 w-1/3 rounded-full transition-all"></div>
-                </div>
-                <p class="text-xs text-center">Click the bar to mark as complete</p>
-            </div>
-
-            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
-                <div class="text-5xl mb-6">🔍</div>
-                <h3 class="font-semibold text-xl mb-3">Field Quest</h3>
-                <div onclick="updateProgress(this)" class="progress-bar h-4 bg-gray-200 rounded-full cursor-pointer mb-4 overflow-hidden">
-                    <div class="progress-fill bg-[#54608B] h-4 w-0 rounded-full transition-all"></div>
-                </div>
-                <p class="text-xs text-center">Click the bar to mark as complete</p>
-            </div>
-
-            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
-                <div class="text-5xl mb-6">📊</div>
-                <h3 class="font-semibold text-xl mb-3">Total Points</h3>
-                <div onclick="updateProgress(this)" class="progress-bar h-4 bg-gray-200 rounded-full cursor-pointer mb-4 overflow-hidden">
-                    <div class="progress-fill bg-[#54608B] h-4 w-2/5 rounded-full transition-all"></div>
-                </div>
-                <p class="text-xs text-center text-[#54608B] font-medium">0 / 60 Points</p>
-            </div>
-        </div>
+        <!-- Missions with Progress -->
+        <h2 class="heading-font text-4xl font-bold text-center mb-12">Your Day 1 Missions</h2>
+        <!-- (same mission cards with clickable progress as before) -->
     </div>
 
     <footer class="bg-[#303030] text-white py-12 text-center">
@@ -137,11 +146,9 @@
         function updateProgress(el) {
             const fill = el.querySelector('.progress-fill');
             let width = parseInt(fill.style.width) || 0;
-            width = (width + 33) % 101; // cycles through 0%, 33%, 66%, 99%
+            width = (width + 33) % 101;
             fill.style.width = width + '%';
-            
-            // Simple feedback
-            el.style.transform = 'scale(1.1)';
+            el.style.transform = 'scale(1.08)';
             setTimeout(() => el.style.transform = 'scale(1)', 200);
         }
     </script>

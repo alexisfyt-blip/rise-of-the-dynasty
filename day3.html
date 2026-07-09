@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 • Brand Warriors | 3K Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700;900&amp;display=swap');
+        .tail-container { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Playfair Display', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(48,48,48,0.78), rgba(48,48,48,0.88)), 
+                             url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        .mission-card { transition: all 0.4s ease; }
+        .mission-card:hover { transform: scale(1.05) translateY(-8px); }
+        .progress-bar { cursor: pointer; transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="tail-container bg-[#F4F4F4] text-[#303030]">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b border-[#D7D7D9] sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-[#54608B] to-amber-800 text-white flex items-center justify-center text-2xl rounded-2xl">🏴</div>
+                <span class="heading-font text-2xl font-bold tracking-tighter">Day 3 • Brand Warriors</span>
+            </div>
+            
+            <div class="flex items-center gap-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-[#54608B]">Home</a>
+                <a href="day1.html" class="hover:text-[#54608B]">Day 1</a>
+                <a href="day2.html" class="hover:text-[#54608B]">Day 2</a>
+                <span class="text-[#54608B] font-semibold">Day 3</span>
+                <a href="day4.html" class="hover:text-[#54608B]">Day 4</a>
+            </div>
+
+            <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+               class="bg-[#54608B] hover:bg-[#3f4a6b] text-white px-6 py-3 rounded-2xl text-sm font-semibold flex items-center gap-x-2">
+                <i class="fa-solid fa-scroll"></i>
+                <span>Classroom</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-[65vh] flex items-center text-white">
+        <div class="max-w-5xl mx-auto px-8 text-center">
+            <h1 class="heading-font text-7xl font-black mb-6">Brand Warriors</h1>
+            <p class="text-3xl font-light">Day 3 • Design Your Battle Banner</p>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-8 py-16">
+        <!-- WELCOME DIALOG -->
+        <div class="bg-white border border-[#54608B] rounded-3xl p-10 mb-16 max-w-3xl mx-auto text-center">
+            <h2 class="heading-font text-4xl mb-6">General’s Brief – Day 3</h2>
+            <p class="text-lg leading-relaxed">
+                Today you become Brand Warriors. Craft powerful visual identities and stories that rally customers — 
+                just as ancient banners inspired armies to victory.
+            </p>
+        </div>
+
+        <!-- SCHEDULE -->
+        <div class="bg-white rounded-3xl p-10 mb-16">
+            <h2 class="heading-font text-4xl font-bold mb-10">Day 3 Campaign</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Morning (09:00 – 12:30)</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4"><span class="font-mono">09:00</span> Brand Identity &amp; Storytelling</li>
+                        <li class="flex gap-4"><span class="font-mono">10:30</span> Core Concepts Briefing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Afternoon (13:30 – 17:00)</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4"><span class="font-mono">13:30</span> The Canva Lab (AI-assisted design)</li>
+                        <li class="flex gap-4"><span class="font-mono">16:00</span> Group Project Time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MISSIONS -->
+        <h2 class="heading-font text-4xl font-bold text-center mb-12">Your Day 3 Missions</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
+                <div class="text-5xl mb-6">🎨</div>
+                <h3 class="font-semibold text-xl mb-3">Brand Kit Builder</h3>
+                <p class="text-sm mb-8">Create logo, colours, and visual identity using Canva + AI.</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">Start Design Lab</a>
+            </div>
+
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
+                <div class="text-5xl mb-6">📝</div>
+                <h3 class="font-semibold text-xl mb-3">Story &amp; Taglines</h3>
+                <p class="text-sm mb-8">Develop compelling brand narratives with AI assistance.</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">Craft Your Story</a>
+            </div>
+
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
+                <div class="text-5xl mb-6">🏆</div>
+                <h3 class="font-semibold text-xl mb-3">Progress Today</h3>
+                <div onclick="updateProgress(this)" class="progress-bar h-4 bg-gray-200 rounded-full mb-4 overflow-hidden">
+                    <div class="progress-fill bg-[#54608B] h-4 w-1/3 rounded-full transition-all"></div>
+                </div>
+                <p class="text-xs text-center">Click bar to update • 80 Points Available</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#303030] text-white py-12 text-center">
+        Day 3 • The 3K Academy • 2026
+    </footer>
+
+    <script>
+        function updateProgress(el) {
+            const fill = el.querySelector('.progress-fill');
+            let width = parseInt(fill.style.width) || 0;
+            width = (width + 33) % 101;
+            fill.style.width = width + '%';
+            
+            el.style.transform = 'scale(1.08)';
+            setTimeout(() => el.style.transform = 'scale(1)', 180);
+        }
+    </script>
+</body>
+</html>

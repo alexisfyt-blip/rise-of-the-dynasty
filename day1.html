@@ -16,12 +16,8 @@
             background-size: cover;
             background-position: center;
         }
-        .character-card {
-            transition: all 0.4s ease;
-        }
-        .character-card:hover {
-            transform: scale(1.05) translateY(-8px);
-        }
+        .character-card { transition: all 0.4s ease; }
+        .character-card:hover { transform: scale(1.05) translateY(-8px); }
     </style>
 </head>
 <body class="tail-container bg-[#F4F4F4] text-[#303030]">
@@ -51,7 +47,7 @@
     </nav>
 
     <!-- HERO -->
-    <header class="hero-bg h-[70vh] flex items-center text-white">
+    <header class="hero-bg h-[65vh] flex items-center text-white">
         <div class="max-w-5xl mx-auto px-8 text-center">
             <h1 class="heading-font text-7xl font-black mb-6">Rise of the Strategists</h1>
             <p class="text-3xl font-light">Day 1 • Awaken Your Inner General</p>
@@ -59,48 +55,101 @@
     </header>
 
     <div class="max-w-6xl mx-auto px-8 py-16">
-        <!-- THREE KINGDOMS CHARACTERS -->
-        <div class="mb-20">
-            <h2 class="heading-font text-4xl font-bold text-center mb-12">Learn from the Legends of the Three Kingdoms</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                
-                <!-- Cao Cao (First as requested) -->
-                <div class="character-card bg-[#1E2937] text-white p-8 rounded-3xl">
-                    <div class="text-6xl mb-6">⚔️</div>
-                    <h3 class="font-bold text-xl mb-1">Cao Cao</h3>
-                    <p class="text-amber-400 text-sm mb-4">Pragmatic &amp; Meritocratic Leader</p>
-                    <p class="text-sm leading-relaxed">Vision: To unify the land by any means necessary, creating a powerful and stable empire.</p>
-                </div>
+        <!-- WELCOME DIALOG -->
+        <div class="bg-white border border-[#54608B] rounded-3xl p-10 mb-16 max-w-3xl mx-auto text-center">
+            <h2 class="heading-font text-4xl mb-6">General’s Brief – Day 1</h2>
+            <p class="text-lg leading-relaxed">
+                Over the next four days, you will draw wisdom from the Three Kingdoms — 
+                the foresight of <strong>Zhuge Liang</strong>, the loyalty of <strong>Liu Bei</strong>, 
+                the bold vision of <strong>Cao Cao</strong> — and apply them to build real F&amp;B brands and businesses.
+            </p>
+            <p class="mt-6 text-sm text-[#54608B]">Today you begin your journey as a strategist.</p>
+        </div>
 
-                <!-- Liu Bei -->
-                <div class="character-card bg-gray-700 text-white p-8 rounded-3xl">
-                    <div class="text-6xl mb-6">🤝</div>
-                    <h3 class="font-bold text-xl mb-1">Liu Bei</h3>
-                    <p class="text-amber-400 text-sm mb-4">Moral &amp; Benevolent Leader</p>
-                    <p class="text-sm leading-relaxed">Vision: To restore the rightful order and bring peace to the people.</p>
-                </div>
+        <!-- CHARACTERS -->
+        <h2 class="heading-font text-4xl font-bold text-center mb-12">Meet the Legends</h2>
+        <div class="grid md:grid-cols-4 gap-8 mb-20">
+            <!-- Cao Cao -->
+            <div class="character-card bg-[#1E2937] text-white p-8 rounded-3xl">
+                <div class="text-6xl mb-6">⚔️</div>
+                <h3 class="font-bold text-xl">Cao Cao</h3>
+                <p class="text-amber-400 text-sm mb-4">Pragmatic &amp; Meritocratic Leader</p>
+                <p class="text-sm">Vision: To unify the land by any means necessary.</p>
+            </div>
+            <!-- Liu Bei -->
+            <div class="character-card bg-gray-700 text-white p-8 rounded-3xl">
+                <div class="text-6xl mb-6">🤝</div>
+                <h3 class="font-bold text-xl">Liu Bei</h3>
+                <p class="text-amber-400 text-sm mb-4">Moral &amp; Benevolent Leader</p>
+                <p class="text-sm">Vision: To restore peace and lead with righteousness.</p>
+            </div>
+            <!-- Sun Quan -->
+            <div class="character-card bg-red-900 text-white p-8 rounded-3xl">
+                <div class="text-6xl mb-6">🏛️</div>
+                <h3 class="font-bold text-xl">Sun Quan</h3>
+                <p class="text-amber-400 text-sm mb-4">Stable &amp; Collaborative Leader</p>
+                <p class="text-sm">Vision: To build a lasting and prosperous kingdom.</p>
+            </div>
+            <!-- Zhuge Liang -->
+            <div class="character-card bg-emerald-800 text-white p-8 rounded-3xl">
+                <div class="text-6xl mb-6">🧠</div>
+                <h3 class="font-bold text-xl">Zhuge Liang</h3>
+                <p class="text-amber-400 text-sm mb-4">Strategic &amp; Analytical Leader</p>
+                <p class="text-sm">Vision: Long-term success through meticulous planning.</p>
+            </div>
+        </div>
 
-                <!-- Sun Quan -->
-                <div class="character-card bg-red-900 text-white p-8 rounded-3xl">
-                    <div class="text-6xl mb-6">🏛️</div>
-                    <h3 class="font-bold text-xl mb-1">Sun Quan</h3>
-                    <p class="text-amber-400 text-sm mb-4">Stable &amp; Collaborative Leader</p>
-                    <p class="text-sm leading-relaxed">Vision: To build a lasting and prosperous kingdom by securing borders and fostering internal stability.</p>
+        <!-- SCHEDULE -->
+        <div class="bg-white rounded-3xl p-10 mb-16">
+            <h2 class="heading-font text-4xl font-bold mb-10">Day 1 Schedule</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Morning (09:00 – 12:30)</h3>
+                    <ul class="space-y-5">
+                        <li class="flex gap-4"><span class="font-mono">09:00</span> Icebreaker – Create Your Hero Persona</li>
+                        <li class="flex gap-4"><span class="font-mono">10:30</span> Empathy Mapping</li>
+                        <li class="flex gap-4"><span class="font-mono">11:30</span> Leadership Principles from the Three Kingdoms</li>
+                    </ul>
                 </div>
-
-                <!-- Zhuge Liang -->
-                <div class="character-card bg-emerald-800 text-white p-8 rounded-3xl">
-                    <div class="text-6xl mb-6">🧠</div>
-                    <h3 class="font-bold text-xl mb-1">Zhuge Liang</h3>
-                    <p class="text-amber-400 text-sm mb-4">Strategic &amp; Analytical Leader</p>
-                    <p class="text-sm leading-relaxed">Vision: To achieve long-term success through meticulous planning, strategic foresight, and intellectual superiority.</p>
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Afternoon (13:30 – 17:00)</h3>
+                    <p class="mb-6">Field Deployment: Observation Quest at hawker centres &amp; F&amp;B hotspots.</p>
+                    <div class="bg-amber-50 p-6 rounded-2xl">
+                        <strong>Mission:</strong> Capture real customer insights and opportunities.
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Rest of Day 1 content (Schedule + Missions) remains the same as previous version -->
-        <!-- ... (I can add it if needed) ... -->
+        <!-- INTERACTIVE MISSIONS -->
+        <h2 class="heading-font text-4xl font-bold text-center mb-12">Your Day 1 Missions</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-[#E3E3E8] hover:border-[#54608B] transition-all">
+                <div class="text-5xl mb-6">🛡️</div>
+                <h3 class="font-semibold text-xl mb-3">Hero Persona</h3>
+                <p class="text-sm mb-8">Define your leadership identity inspired by the legends.</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">Start Mission</a>
+            </div>
 
+            <div class="bg-white p-8 rounded-3xl border border-[#E3E3E8] hover:border-[#54608B] transition-all">
+                <div class="text-5xl mb-6">🔍</div>
+                <h3 class="font-semibold text-xl mb-3">Field Observation Quest</h3>
+                <p class="text-sm mb-8">Explore real F&amp;B environments and gather intelligence.</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">Log Your Insights</a>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-[#E3E3E8] hover:border-[#54608B] transition-all">
+                <div class="text-5xl mb-6">📈</div>
+                <h3 class="font-semibold text-xl mb-3">Campaign Progress</h3>
+                <p class="text-sm mb-8">Earn up to 60 points today.</p>
+                <div class="h-3 bg-gray-200 rounded-full">
+                    <div class="bg-[#54608B] w-1/3 h-3 rounded-full"></div>
+                </div>
+                <p class="text-xs text-center mt-3 text-gray-500">0 / 60 Points</p>
+            </div>
+        </div>
     </div>
 
     <footer class="bg-[#303030] text-white py-12 text-center">

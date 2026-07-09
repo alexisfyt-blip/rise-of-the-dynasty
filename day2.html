@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 • Forge the Alliance | 3K Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700;900&amp;display=swap');
+        .tail-container { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Playfair Display', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(48,48,48,0.78), rgba(48,48,48,0.88)), 
+                             url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        .mission-card { transition: all 0.4s ease; }
+        .mission-card:hover { transform: scale(1.05) translateY(-8px); }
+    </style>
+</head>
+<body class="tail-container bg-[#F4F4F4] text-[#303030]">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b border-[#D7D7D9] sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-[#54608B] to-amber-800 text-white flex items-center justify-center text-2xl rounded-2xl">🤝</div>
+                <span class="heading-font text-2xl font-bold tracking-tighter">Day 2 • Forge the Alliance</span>
+            </div>
+            
+            <div class="flex items-center gap-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-[#54608B]">Home</a>
+                <a href="day1.html" class="hover:text-[#54608B]">Day 1</a>
+                <span class="text-[#54608B] font-semibold">Day 2</span>
+                <a href="day3.html" class="hover:text-[#54608B]">Day 3</a>
+                <a href="day4.html" class="hover:text-[#54608B]">Day 4</a>
+            </div>
+
+            <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+               class="bg-[#54608B] hover:bg-[#3f4a6b] text-white px-6 py-3 rounded-2xl text-sm font-semibold flex items-center gap-x-2">
+                <i class="fa-solid fa-scroll"></i>
+                <span>Classroom</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-[65vh] flex items-center text-white">
+        <div class="max-w-5xl mx-auto px-8 text-center">
+            <h1 class="heading-font text-7xl font-black mb-6">Forge the Alliance</h1>
+            <p class="text-3xl font-light">Day 2 • Build the Foundations of Your Empire</p>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-8 py-16">
+        <!-- WELCOME DIALOG -->
+        <div class="bg-white border border-[#54608B] rounded-3xl p-10 mb-16 max-w-3xl mx-auto text-center">
+            <h2 class="heading-font text-4xl mb-6">General’s Brief – Day 2</h2>
+            <p class="text-lg leading-relaxed">
+                Alliances determine the fate of empires. Today you will master supply chains, budgeting, 
+                and real-world operations — just as the great leaders of the Three Kingdoms forged powerful partnerships.
+            </p>
+            <p class="mt-6 text-[#54608B]">“A single arrow is easily broken, but not ten in a bundle.”</p>
+        </div>
+
+        <!-- SCHEDULE -->
+        <div class="bg-white rounded-3xl p-10 mb-16">
+            <h2 class="heading-font text-4xl font-bold mb-10">Day 2 Campaign</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Morning: Data &amp; Logistics</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4"><span class="font-mono">09:00</span> Supply Chain Mastery &amp; Budgeting</li>
+                        <li class="flex gap-4"><span class="font-mono">10:30</span> Alliance Builder Challenge (Google Sheets + AI)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Afternoon: Real-World Application</h3>
+                    <p class="mb-6">Continued Observation Quest + Visit to Nam Town Vietnamese Restaurant</p>
+                    <p class="text-sm bg-amber-50 p-6 rounded-2xl">Direct business owner interaction and roleplay</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTERACTIVE MISSIONS -->
+        <h2 class="heading-font text-4xl font-bold text-center mb-12">Your Day 2 Missions</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8] hover:border-[#54608B]">
+                <div class="text-5xl mb-6">📊</div>
+                <h3 class="font-semibold text-xl mb-3">Alliance Builder</h3>
+                <p class="text-sm mb-8">Build your supply chain and resource plan using Google Sheets and AI tools.</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">Launch Alliance Builder</a>
+            </div>
+
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8] hover:border-[#54608B]">
+                <div class="text-5xl mb-6">🏪</div>
+                <h3 class="font-semibold text-xl mb-3">Restaurant Immersion</h3>
+                <p class="text-sm mb-8">Apply your learning during the visit to Nam Town. Capture operations insights.</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">Submit Field Report</a>
+            </div>
+
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8] hover:border-[#54608B]">
+                <div class="text-5xl mb-6">🏅</div>
+                <h3 class="font-semibold text-xl mb-3">Alliance Points</h3>
+                <p class="text-sm mb-8">Earn up to 60 points today. Strong alliances win wars.</p>
+                <div class="h-3 bg-gray-200 rounded-full mb-3">
+                    <div class="bg-[#54608B] w-2/5 h-3 rounded-full"></div>
+                </div>
+                <p class="text-xs text-center text-gray-500">0 / 60 Points Earned</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#303030] text-white py-12 text-center">
+        Day 2 • The 3K Academy • 2026
+    </footer>
+</body>
+</html>

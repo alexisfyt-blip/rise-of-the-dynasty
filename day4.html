@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 • Rise of the Dynasty | 3K Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700;900&amp;display=swap');
+        .tail-container { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Playfair Display', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(48,48,48,0.78), rgba(48,48,48,0.88)), 
+                             url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        .mission-card { transition: all 0.4s ease; }
+        .mission-card:hover { transform: scale(1.05) translateY(-8px); }
+        .progress-bar { cursor: pointer; transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="tail-container bg-[#F4F4F4] text-[#303030]">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b border-[#D7D7D9] sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-[#54608B] to-amber-800 text-white flex items-center justify-center text-2xl rounded-2xl">👑</div>
+                <span class="heading-font text-2xl font-bold tracking-tighter">Day 4 • Rise of the Dynasty</span>
+            </div>
+            
+            <div class="flex items-center gap-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-[#54608B]">Home</a>
+                <a href="day1.html" class="hover:text-[#54608B]">Day 1</a>
+                <a href="day2.html" class="hover:text-[#54608B]">Day 2</a>
+                <a href="day3.html" class="hover:text-[#54608B]">Day 3</a>
+                <span class="text-[#54608B] font-semibold">Day 4</span>
+            </div>
+
+            <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+               class="bg-[#54608B] hover:bg-[#3f4a6b] text-white px-6 py-3 rounded-2xl text-sm font-semibold flex items-center gap-x-2">
+                <i class="fa-solid fa-scroll"></i>
+                <span>Classroom</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-[70vh] flex items-center text-white">
+        <div class="max-w-5xl mx-auto px-8 text-center">
+            <h1 class="heading-font text-7xl font-black mb-6">Rise of the Dynasty</h1>
+            <p class="text-3xl font-light">Day 4 • Claim Your Throne</p>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-8 py-16">
+        <!-- WELCOME DIALOG -->
+        <div class="bg-white border border-[#54608B] rounded-3xl p-10 mb-16 max-w-3xl mx-auto text-center">
+            <h2 class="heading-font text-4xl mb-6">General’s Brief – Final Conquest</h2>
+            <p class="text-lg leading-relaxed">
+                Today is the culmination of your journey. You have trained as a strategist, forged alliances, 
+                and crafted powerful brands. Now it is time to present your vision to the world.
+            </p>
+            <p class="mt-6 text-[#54608B] italic">“The empire is not given. It is claimed.”</p>
+        </div>
+
+        <!-- SCHEDULE -->
+        <div class="bg-white rounded-3xl p-10 mb-16">
+            <h2 class="heading-font text-4xl font-bold mb-10">Day 4 – The Grand Conquest</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Morning</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4"><span class="font-mono">09:00</span> Final Pitch Clinic &amp; Rehearsals</li>
+                        <li class="flex gap-4"><span class="font-mono">11:00</span> Group Project Refinement</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-6 text-[#54608B]">Afternoon</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4"><span class="font-mono">13:30</span> The Grand Pitch Presentations</li>
+                        <li class="flex gap-4"><span class="font-mono">15:30</span> Judging, Awards &amp; Celebration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MISSIONS -->
+        <h2 class="heading-font text-4xl font-bold text-center mb-12">Final Day Missions</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
+                <div class="text-5xl mb-6">🎤</div>
+                <h3 class="font-semibold text-xl mb-3">Final Pitch</h3>
+                <p class="text-sm mb-8">Present your complete F&amp;B brand concept, strategy, and prototype to the judges.</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">Upload Pitch Materials</a>
+            </div>
+
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
+                <div class="text-5xl mb-6">🏆</div>
+                <h3 class="font-semibold text-xl mb-3">Awards Ceremony</h3>
+                <p class="text-sm mb-8">Dynasty Champion, Creative Commander, Master of Strategy — who will rise?</p>
+                <a href="https://classroom.google.com/c/Nzk4NDEwMTA2MjE2?cjc=xzq5ibhj" target="_blank"
+                   class="block text-center bg-[#54608B] text-white py-5 rounded-2xl font-medium">View Leaderboard</a>
+            </div>
+
+            <div class="mission-card bg-white p-8 rounded-3xl border border-[#E3E3E8]">
+                <div class="text-5xl mb-6">📈</div>
+                <h3 class="font-semibold text-xl mb-3">Campaign Progress</h3>
+                <div onclick="updateProgress(this)" class="progress-bar h-4 bg-gray-200 rounded-full mb-4 overflow-hidden">
+                    <div class="progress-fill bg-[#54608B] h-4 w-3/4 rounded-full transition-all"></div>
+                </div>
+                <p class="text-xs text-center">Click to update • 100 Points Available</p>
+            </div>
+        </div>
+
+        <!-- THANK YOU SECTION -->
+        <div class="mt-24 bg-gradient-to-br from-[#54608B] to-[#3f4a6b] text-white rounded-3xl p-16 text-center">
+            <h2 class="heading-font text-5xl font-bold mb-6">Thank You, Future Dynasty Builders</h2>
+            <p class="text-xl max-w-2xl mx-auto leading-relaxed">
+                You have completed an intense and transformative journey. 
+                Whether you win an award today or not, you have already proven yourself as a leader. 
+                Go forth and build remarkable F&amp;B businesses with courage, creativity, and strategy.
+            </p>
+            <p class="mt-10 text-amber-300 font-medium">— The 3K Academy Team</p>
+        </div>
+    </div>
+
+    <footer class="bg-[#303030] text-white py-12 text-center">
+        Day 4 • The 3K Academy • 2026
+    </footer>
+
+    <script>
+        function updateProgress(el) {
+            const fill = el.querySelector('.progress-fill');
+            let width = parseInt(fill.style.width) || 0;
+            width = (width + 25) % 101;
+            fill.style.width = width + '%';
+            
+            el.style.transform = 'scale(1.08)';
+            setTimeout(() => el.style.transform = 'scale(1)', 200);
+        }
+    </script>
+</body>
+</html>
